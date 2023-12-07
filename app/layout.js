@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import ReduxProviders from "@/provider/ReduxProviders";
-import Auth from "@/utils/Auth";
+
 
 export const metadata = {
   title: "react-portal",
@@ -11,12 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <link rel="shortcut icon" href="/logo.avif" type="image/x-icon" />
+      <body className="h-full">
         <ReduxProviders>
-          <Auth>
+    
             <Navbar />
             {children}
-          </Auth>
+       
         </ReduxProviders>
       </body>
     </html>
