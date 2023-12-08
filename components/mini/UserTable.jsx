@@ -2,7 +2,7 @@ import { TbToggleRight } from "react-icons/tb";
 
 export default function UserTable() {
   return (
-    <div className="bg-gray-300 px-2 py-4">
+    <div className="bg-gray-300  text-gray-800 px-2 py-4">
 
     <table className="text-sm w-full ">
       <thead className="">

@@ -1,6 +1,7 @@
 
 import { useSelector } from "react-redux"
-import toast ,{Toaster} from "react-hot-toast"
+
+import { redirect } from "react-router-dom"
 
 
 
@@ -9,15 +10,10 @@ export default function Auth({children}) {
   const isAuthenticated = useSelector((state)=>state.auth.isAuthenticated)
 console.log(isAuthenticated)
 
-// toast
-const notify=()=>  toast.error("please login first...")
+
 
 if(isAuthenticated) return <>{children}</>
-else return <div>
-{notify()}
-<Toaster/>
-{/* {redirect("/login")} */}
-</div>
+else return redirect("/login")
 
 
 }

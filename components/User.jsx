@@ -23,7 +23,7 @@ export default function User() {
 {
   isShowMoreOpen && <div className="show-more-card w-full ">
 <UserTable/>
-  <button onClick={()=>setIsShowMoreOpen(false)} className="mt-1 w-full text-center font-bold text-md text-orange-500 ">Show less</button>
+  <button onClick={()=>setIsShowMoreOpen(false)} className="mt-1 w-full text-center font-bold text-md text-gray-900 ">Show less</button>
 </div>
 }
     </div>

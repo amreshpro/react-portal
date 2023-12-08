@@ -1,23 +1,10 @@
-import User from "./User";
+
 
 export default function Hero() {
   return (
-    <div className="px-4 py-4 flex gap-6 justify-center items-center flex-wrap">
+<div className="hero">
+  <h1>Hello </h1>
+</div>
 
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-<User/>
-
-    </div>
   )
 }

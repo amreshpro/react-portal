@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import UserDetail from "./mini/UserDetail";
+import { useSelector } from "react-redux";
 
-const isUserAuthenticated = true;
 
 
 
 export default function Navbar() {
+
+  const isUserAuthenticated = useSelector((state)=>state.auth.isAuthenticated);
+
+
   return (
     <div className="flex justify-between items-center py-2 px-4">
       <div className="logo rounded-full border-2 border-orange-500 ">
